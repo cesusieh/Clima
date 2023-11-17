@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #e5e8e6;
+}
+
+header{
+    width: 100%;
+    height: 5vh;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo{
+    font-family: Agbalumo;
+    color: rgb(62, 200, 255);
+    margin-left: 1%;
+    font-size: 3em;
+    text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+#icon_header{
+    height: 6vh;
+}
+
+main{
+    display: flex;
+    padding: 15px;
+    height: 90%;
+}
+
+#search_cidade{
+    height: 60px;
+    width: 20vw;
+    border: none;
+    border-radius: 32px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#area_local{
+    width: 10%;
+    height: 10%;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.local{
+    font-family: roboto;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+.area{
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    flex-direction:  column;
+    border: 1px solid rgb(62, 200, 255);
+    border-radius: 32px;
+}
+
+.info_titulo{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(62, 200, 255);
+    color: white;
+    height: 15%;
+    font-size: 2vw;
+    font-family: agbalumo;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+}
+
+.info_texto{
+    font-family: roboto;
+    margin-left: 2%;
+    font-size: 1.5vw;
+    margin-top: 5%;
+}
+
+
+#area_temperatura{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    background: url(image/gorgeous-clouds-background-with-blue-sky-design_1017-25501.png);
+    background-size: cover;
+}
+
+#area_misc{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    background: url(image/cartoon-clouds-weather-seamless-pattern-vector-13277868.jpg);
+}

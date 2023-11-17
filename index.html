@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clima</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <h1 class="titulo">Clima</h1>
+            <img src="image/7678078941600621650-512.png" id="icon_header">
+        </header>
+
+        <main>
+
+
+            <form id="form">
+                <input type="search" placeholder="Busque sua cidade" id="search_cidade" class="primeira_busca">
+            </form>
+
+            <div id="area_local">
+                <span class="local" id="info_cidade"></span><br>
+                <span class="local" id="info_pais"></span>
+            </div>
+
+            <div id="area_temperatura" class="area">
+                <h3 class="info_titulo">Temperatura</h3>
+                <span class="info_texto" id="info_temp"></span>
+                <span class="info_texto" id="info_sensacao"></span>
+                <span class="info_texto" id="info_min"></span>
+                <span class="info_texto" id="info_max"></span>
+            </div>
+
+            <div id="area_misc" class="area">
+                <h3 class="info_titulo">Informações</h3>
+                <span class="info_texto" id="info_press"></span>
+                <span class="info_texto" id="info_umi"></span>    
+                <span class="info_texto" id="info_vel_vento"</span>                
+            </div>
+
+
+        </main>
+    </body>
+</html>
