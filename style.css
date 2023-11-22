@@ -48,6 +48,16 @@ main{
     transform: translate(-50%);
 }
 
+#fix_button{
+    background-color: white;
+    border: none;
+    position: absolute;
+    right: 1%;
+    border-radius: 16px;
+    width: 100px;
+    height: 50px;
+}
+
 #area_local{
     width: 10%;
     height: 10%;
@@ -66,14 +76,14 @@ main{
     height: 50vh;
     display: flex;
     flex-direction:  column;
-    border: 1px solid rgb(62, 200, 255);
+    border: 1px solid rgb(0, 179, 250);
     border-radius: 32px;
 }
 
 .info_titulo{
     display: flex;
     justify-content: center;
-    background-color: rgb(62, 200, 255);
+    background-color: rgb(0, 183, 255);
     color: white;
     height: 15%;
     font-size: 2vw;
@@ -83,7 +93,8 @@ main{
 }
 
 .info_texto{
-    font-family: roboto;
+    color: white;
+    font-family: agbalumo;
     margin-left: 2%;
     font-size: 1.5vw;
     margin-top: 5%;
@@ -93,14 +104,22 @@ main{
 #area_temperatura{
     position: absolute;
     top: 30%;
-    left: 10%;
-    background: url(image/gorgeous-clouds-background-with-blue-sky-design_1017-25501.png);
+    left: 1%;
+    background: #7CC6FE;
     background-size: cover;
 }
 
 #area_misc{
     position: absolute;
     top: 30%;
-    right: 10%;
-    background: url(image/cartoon-clouds-weather-seamless-pattern-vector-13277868.jpg);
+    left: 35%;
+    background: #7CC6FE;
+}
+
+#area_fixo{
+    position: absolute;
+    top: 30%;
+    right: 1%;
+    background: #7CC6FE;
+    background-size: cover;
 }

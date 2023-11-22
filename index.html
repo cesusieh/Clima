@@ -1,3 +1,24 @@
+<!--  
+O PROJETO FOI CRIADO DO ZERO, NÃO UTILIZANDO O TRABALHO ANTERIOR COMO BASE.
+
+Basicamente um site para informar o clima de qualquer cidade do mundo (que a API conhecer) com a possibilidade de fixar, assim permitindo que sempre que você voltar ao site suas cidades fixadas estejam lá.
+
+Funções:
+
+CallAPI: faz uma solicitação para a API utilizando uma cidade como parametro e verificando se deu tudo certo;
+renderInfo: Caso tenha dado tudo certo na CallAPi, renderiza as informações na tela, via html/css;
+verifyFix: Verificar se a cidade que está sendo consultada está ou não fixada;
+addFix: Adicionar a cidades fixadas;
+removeFix: Remove das cidades fixadas;
+renderFix: Renderiza as cidades fixadas;
+
+As estruturas de decisões estão presentes dentro de varias funções, como por exemplo na verifyFix, que analisa se a cidade está ou não fixada para escolher como vai lidar com o botão;
+As estruturas de repetição também estão presentes de varias funções, como na função removeFix, que utiliza delas para percorrer um vetor e encontrar qual elemento deve ser removido;
+
+A alteração do CSS pode ser notada nas funções renderInfo e renderFix, que cria elementos no HTML utilizando de classes CSS para a estilização
+
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -16,10 +37,11 @@
 
         <main>
 
-
             <form id="form">
                 <input type="search" placeholder="Busque sua cidade" id="search_cidade" class="primeira_busca">
             </form>
+
+            <button id="fix_button" >Fixar</button>
 
             <div id="area_local">
                 <span class="local" id="info_cidade"></span><br>
@@ -38,9 +60,12 @@
                 <h3 class="info_titulo">Informações</h3>
                 <span class="info_texto" id="info_press"></span>
                 <span class="info_texto" id="info_umi"></span>    
-                <span class="info_texto" id="info_vel_vento"</span>                
+                <span class="info_texto" id="info_vel_vento"></span>                
             </div>
 
+            <div id="area_fixo" class="area">
+                <h3 class="info_titulo">Fixos</h3>
+            </div>
 
         </main>
     </body>
